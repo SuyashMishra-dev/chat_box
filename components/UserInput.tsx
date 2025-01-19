@@ -1,5 +1,12 @@
-import React, { Dispatch, SetStateAction, useRef, useState } from "react";
+import React, {
+  Dispatch,
+  SetStateAction,
+  useContext,
+  useRef,
+  useState,
+} from "react";
 import { toast } from "./ui/use-toast";
+import { AppContext } from "@/providers";
 
 type Message = {
   id: number;
@@ -20,6 +27,7 @@ const UserInput = ({
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const [rows, setRows] = useState(1);
   const LINE_HEIGHT = 32;
+  const { appData, setAppData } = useContext(AppContext);
 
   const calculateRows = (value: string) => {
     const lineCount = value.split("\n").length; // Count lines based on `\n`
@@ -47,6 +55,7 @@ const UserInput = ({
     setMessages((prev) => [...prev, newMessage]);
     setInputValue("");
     setRows(1);
+    setAppData({ ...appData, card: null });
 
     try {
       const response = await fetch("/api/chat", {
@@ -105,6 +114,7 @@ const UserInput = ({
                 timestamp: new Date(),
               },
             ]);
+
             toast({
               title: "There is some problem with AI agent",
             });
