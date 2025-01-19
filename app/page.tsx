@@ -12,8 +12,7 @@ export default function HomePage() {
   const router = useRouter();
   const { appData, setAppData } = useContext(AppContext);
 
-  const createRoom = (e: React.FormEvent) => {
-    e.preventDefault();
+  const createRoom = () => {
     if (userName.trim()) {
       setAppData({ ...appData, userData: { userName: userName } });
       setLocalStorage("userName", userName);
@@ -27,18 +26,23 @@ export default function HomePage() {
         <h1 className="mb-6 text-3xl font-bold text-center">
           Welcome! Enter your details
         </h1>
-        <form onSubmit={createRoom} className="space-y-4">
+        <div className="space-y-4">
           <Input
             type="text"
             value={userName}
-            onChange={(e) => setUserName(e.target.value)}
+            onChange={(e: any) => setUserName(e.target.value)}
             placeholder="Enter your name"
             className="w-full"
+            onKeyDown={(ev: React.KeyboardEvent) => {
+              if (ev.key === "Enter") {
+                createRoom();
+              }
+            }}
           />
-          <Button type="submit" className="w-full">
+          <Button onClick={createRoom} className="w-full">
             Submit
           </Button>
-        </form>
+        </div>
       </div>
     </div>
   );
