@@ -1,4 +1,4 @@
-- ### Live link: `https://suyash-chat-box.vercel.app/`
+- ### Live link: [https://suyash-chat-box.vercel.app/](#https://suyash-chat-box.vercel.app/)
 
 ## Table of Contents
 
@@ -24,7 +24,9 @@ To get started with the project, follow the instructions below:
 - Step 2 - Navigate to the project directory:
   cd chat_box
 
-## Prerequisites Before running the project, make sure you have the following installed:
+## Prerequisites
+
+- Before running the project, make sure you have the following installed:
 
 - Node.js (version 16 or later) npm (version 8 or later) or Yarn (optional)
 
@@ -34,13 +36,15 @@ To install the project dependencies, run one of the following commands:
 
 With npm:
 
-`npm install Or with Yarn:`
+`npm install`
 
 With yarn:
 
 `yarn install`
 
-## Available Scripts After installing the dependencies, you can run the following scripts:
+## Available Scripts After
+
+- installing the dependencies, you can run the following scripts:
 
 `npm run dev / yarn dev` Starts the development server at http://localhost:3000. This will watch for any changes and hot-reload the project.
 
@@ -50,11 +54,15 @@ With yarn:
 
 `npm run lint / yarn lint` Runs ESLint to check for code quality issues in your project.
 
-##Dependencies Here are the main dependencies used in the project:
+## Dependencies
+
+- Here are the main dependencies used in the project:
 
 @hookform/resolvers: Library for handling form validation and schema resolvers in React Hook Form. @radix-ui/react-\*: A set of unstyled, accessible UI components that provide building blocks for modern web applications. Components such as Accordion, Dialog, Checkbox, Tooltip, etc., are used for creating complex UI interactions. axios: A promise-based HTTP client used for making API requests. clsx: A utility for conditionally combining class names. embla-carousel-react: A responsive carousel library. react-hook-form: A powerful library for managing form state and validation in React. lucide-react: A collection of simple, customizable icons for React applications. tailwindcss: Utility-first CSS framework for building custom designs. sonner: Toast notifications library for React. date-fns: A utility library for working with dates. react-markdown: A component for rendering markdown as React components. next-themes: A library for handling theme switching (e.g., light and dark mode). openai: OpenAI API library for integrating AI features.
 
-##Project Structure Here is an overview of the important folders and files in this project: /public # Public files like images, favicon, etc. /images # Folder for static images /src /components # Reusable React components /pages # Next.js pages (URL routes) /styles # Tailwind CSS configuration and styles /utils # Helper functions and utility files /hooks # Custom hooks like form handling /types # TypeScript types used throughout the project /package.json # Project metadata and dependencies /tsconfig.json # TypeScript configuration /tailwind.config.js # Tailwind CSS configuration
+## Project
+
+- Structure Here is an overview of the important folders and files in this project: /public # Public files like images, favicon, etc. /images # Folder for static images /src /components # Reusable React components /pages # Next.js pages (URL routes) /styles # Tailwind CSS configuration and styles /utils # Helper functions and utility files /hooks # Custom hooks like form handling /types # TypeScript types used throughout the project /package.json # Project metadata and dependencies /tsconfig.json # TypeScript configuration /tailwind.config.js # Tailwind CSS configuration
 
 ## Components
 
