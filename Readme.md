@@ -1,4 +1,6 @@
-[.] ### Live link: [https://suyash-chat-box.vercel.app/](#https://suyash-chat-box.vercel.app/)
+### Live link:
+
+- [https://suyash-chat-box.vercel.app/](#https://suyash-chat-box.vercel.app/)
 
 ## Table of Contents
 
